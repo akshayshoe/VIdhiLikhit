@@ -216,14 +216,37 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    /* Flex direction change for mobile */
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .hero-text h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
     .service-item {
         width: 100%;
         margin: 20px 0;
     }
 
-    .hero-text h2 {
-        font-size: 24px;
+    /* Project Gallery Mobile */
+    .projects-gallery {
+        grid-template-columns: 1fr; /* Stack items */
     }
-
-    
 }
